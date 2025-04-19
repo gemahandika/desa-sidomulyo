@@ -106,12 +106,12 @@ include '../../../app/models/user_models.php';
                                 <p>Aparatur Desa</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="../visi-misi/index.php">
                                 <i class="fas fa-book"></i>
                                 <p>Visi Misi</p>
                             </a>
-                        </li>
+                        </li> -->
                         <!-- <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#sidebarLayouts">
                                 <i class="fas fa-th-list"></i>
