@@ -6,7 +6,7 @@
 // }
 
 // koneksi public
-$koneksi = mysqli_connect('localhost', 'jnee6778_dbdesa', 'zre.u?IPV]jE', 'jnee6778_dbdesa');
+$koneksi = mysqli_connect('localhost', 'jnee6778_mesit', 'Jnemes2017', 'jnee6778_dbdesa');
 if (mysqli_connect_errno()) {
     echo mysqli_connect_error();
 }
