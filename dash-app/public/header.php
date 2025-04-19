@@ -85,7 +85,7 @@ include '../../../app/models/user_models.php';
             <div class="sidebar-wrapper scrollbar scrollbar-inner">
                 <div class="sidebar-content">
                     <ul class="nav nav-secondary">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a
                                 href="../home/home.php"
                                 class="collapsed"
@@ -93,7 +93,7 @@ include '../../../app/models/user_models.php';
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="../berita/berita.php">
                                 <i class="fas fa-desktop"></i>
