@@ -1,38 +1,12 @@
 <?php
-
-// Setting default timezone
-// date_default_timezone_set('Asia/Jakarta');
-// $db_host = 'localhost';
-// $db_user = 'root';
-// $db_pass = '';
-// $db_name = 'db_desa';
-
-// mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-// try {
-//     $koneksi = new mysqli($db_host, $db_user, $db_pass, $db_name);
-//     $koneksi->set_charset("utf8mb4"); // Pastikan encoding karakter sesuai
-// } catch (Exception $e) {
-//     die("Koneksi gagal: " . $e->getMessage());
+// koneksi local
+// $koneksi = mysqli_connect('localhost', 'root', '', 'db_desa');
+// if (mysqli_connect_errno()) {
+//     echo mysqli_connect_error();
 // }
 
-
-date_default_timezone_set('Asia/Jakarta');
-
-// Konfigurasi database
-$db_host = 'localhost';
-$db_user = 'jnee6778_dbdesa';
-$db_pass = 'zre.u?IPV]jE';
-$db_name = 'jnee6778_dbdesa';
-
-// Aktifkan error reporting untuk debugging
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-try {
-    // Koneksi ke database
-    $koneksi = new mysqli($db_host, $db_user, $db_pass, $db_name);
-    $koneksi->set_charset("utf8mb4"); // Pastikan encoding karakter sesuai
-} catch (Exception $e) {
-    // Tampilkan pesan error jika koneksi gagal
-    die("Koneksi gagal: " . $e->getMessage());
+// koneksi public
+$koneksi = mysqli_connect('localhost', 'jnee6778_dbdesa', 'zre.u?IPV]jE', 'jnee6778_dbdesa');
+if (mysqli_connect_errno()) {
+    echo mysqli_connect_error();
 }
