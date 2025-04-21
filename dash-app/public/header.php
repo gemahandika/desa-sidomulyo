@@ -76,9 +76,6 @@ include '../../../app/models/user_models.php';
                             <i class="gg-menu-left"></i>
                         </button>
                     </div>
-                    <button class="topbar-toggler more">
-                        <i class="gg-more-vertical-alt"></i>
-                    </button>
                 </div>
                 <!-- End Logo Header -->
             </div>
@@ -106,12 +103,18 @@ include '../../../app/models/user_models.php';
                                 <p>Aparatur Desa</p>
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a href="../visi-misi/index.php">
                                 <i class="fas fa-book"></i>
                                 <p>Visi Misi</p>
                             </a>
-                        </li> -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="../sambutan/index.php">
+                                <i class="fas fa-pen-square"></i>
+                                <p>Sambutan Kepala Desa</p>
+                            </a>
+                        </li>
                         <!-- <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#sidebarLayouts">
                                 <i class="fas fa-th-list"></i>
@@ -284,69 +287,28 @@ include '../../../app/models/user_models.php';
         <!-- End Sidebar -->
 
         <div class="main-panel">
-            <div class="main-header">
+            <div class="main-header" style="background-color: #1a2035;">
                 <div class="main-header-logo">
-                    <!-- Logo Header -->
                     <div class="logo-header" data-background-color="dark">
-                        <a href="index.html" class="logo">
+                        <a href="#" class="logo">
                             <img
                                 src="../../../app/assets/img//logo_light.svg"
                                 alt="navbar brand"
                                 class="navbar-brand"
                                 height="20" />
                         </a>
-                        <div class="nav-toggle">
-                            <button class="btn btn-toggle toggle-sidebar">
-                                <i class="gg-menu-right"></i>
-                            </button>
-                            <button class="btn btn-toggle sidenav-toggler">
-                                <i class="gg-menu-left"></i>
-                            </button>
-                        </div>
-                        <button class="topbar-toggler more">
-                            <i class="gg-more-vertical-alt"></i>
-                        </button>
                     </div>
-                    <!-- End Logo Header -->
                 </div>
                 <!-- Navbar Header -->
-                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
-                    <div class="container-fluid bg-dark text-white">
-                        <div class="col-lg-10 text-center text-lg-end">
-                            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                                <div class="marquee-container">
-                                    <span class="marquee"><b> | Selamat Datang di Dashboard Resmi Desa Sidomulyo | Untuk Menjaga Keamanan, Silahkan Ganti Password Secara Berkala</b></span>
-                                </div>
+                <div class="container d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="marquee-container">
+                                <span class="marquee text-white mt-4">
+                                    <b>| Selamat Datang di Website Resmi Desa Sidomulyo | Melalui website ini Anda dapat menjelajahi segala hal yang terkait dengan Desa</b>
+                                </span>
                             </div>
                         </div>
-                        <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
-                            <li class="nav-item topbar-user dropdown hidden-caret">
-                                <a
-                                    class="dropdown-toggle profile-pic"
-                                    data-bs-toggle="dropdown"
-                                    href="#"
-                                    aria-expanded="false">
-                                    <span class="profile-username mr-4">
-                                        <span class="fw-bold text-white"><?= $nama_user ?></span>
-                                    </span>
-
-                                    <div class="avatar-sm mr-2">
-                                        <img
-                                            src="../../../app/assets/img/desa/User.png"
-                                            alt="..."
-                                            class="avatar-img rounded-circle" />
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu dropdown-user animated fadeIn">
-                                    <div class="dropdown-user-scroll scrollbar-outer">
-                                        <li>
-                                            <a class="dropdown-item" href="../login/logout.php">Logout</a>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
-                </nav>
-                <!-- End Navbar -->
+                </div>
             </div>

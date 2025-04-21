@@ -1,25 +1,24 @@
 .marquee-container {
-    width: 800px;
+    width: 100%;
     overflow: hidden;
-    display: inline-block;
-}
-
-.marquee {
     white-space: nowrap;
+    position: relative;
+  }
+  
+  .marquee {
     display: inline-block;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
+    padding-left: 100%; /* mulai dari luar layar */
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+        transform: translateX(0%);
     }
-
-    to {
+    100% {
         transform: translateX(-100%);
     }
-}
-
+  }
 .text-truncate {
     white-space: nowrap;
     overflow: hidden;

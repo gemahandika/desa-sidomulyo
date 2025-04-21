@@ -66,7 +66,7 @@ include '../header.php';
                                 <img src="../../app_home/assets_home/img/desa/visi.png" alt="Visi" class="img-fluid" style="max-width: 100px;">
                                 <div>
                                     <h1><b>VISI</b></h1>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                    <p><?= $visi; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ include '../header.php';
                                 <img src="../../app_home/assets_home/img/desa/misi.png" alt="Visi" class="img-fluid" style="max-width: 100px;">
                                 <div>
                                     <h1><b>MISI</b></h1>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                    <p><?= $misi; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ include '../header.php';
         <script>
             var map = L.map('map', {
                 center: [3.471448, 98.687599],
-                zoom: 15,
+                zoom: 14,
                 scrollWheelZoom: false // Nonaktifkan zoom dengan scroll secara default
             });
 
@@ -203,7 +203,7 @@ include '../header.php';
                         "loop": true,
                         "speed": 600,
                         "autoplay": {
-                            "delay": 5000
+                            "delay": 2000
                         },
                         "slidesPerView": "auto",
                         "pagination": {

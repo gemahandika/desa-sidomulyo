@@ -47,3 +47,23 @@ if ($sql->num_rows > 0) { // Pastikan ada data sebelum mengambilnya
 } else {
     $judul_berita = "Tidak ada berita yang tersedia";
 }
+
+
+$sql_visi = mysqli_query($koneksi, "SELECT * FROM visi_misi WHERE jenis_visimisi='VISI'") or die(mysqli_error($koneksi));
+
+if ($sql_visi->num_rows > 0) { // Pastikan ada data sebelum mengambilnya
+    $data_visi = $sql_visi->fetch_array();
+    $visi = $data_visi["nama_visimisi"];
+} else {
+    $visi = "Tidak ada berita yang tersedia";
+}
+
+
+$sql_misi = mysqli_query($koneksi, "SELECT * FROM visi_misi WHERE jenis_visimisi='MISI'") or die(mysqli_error($koneksi));
+
+if ($sql_misi->num_rows > 0) { // Pastikan ada data sebelum mengambilnya
+    $data_misi = $sql_misi->fetch_array();
+    $misi = $data_misi["nama_visimisi"];
+} else {
+    $misi = "Tidak ada berita yang tersedia";
+}
